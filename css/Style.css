@@ -1,21 +1,21 @@
 *{
-    padding: 0;
-    margin: 0;
-    font-family:'Josefin Sans',sans-serif ;
     box-sizing:border-box;
-
+    margin: 0;
+    padding: 0;
+    font-family:'Josefin Sans',sans-serif ;
+    
 }
 .Hero{
-    height: 100vh;
-    width: 100%;
-    background-image: url('../Plain-Black-Wallpaper-7.jpg');
+    background-image: url('../images/Plain-Black-Wallpaper-7.jpg');
     background-size:cover;
-    color:aqua;
     background-position: center;
+    color:aqua;
+    height: 100vh;
+    width: 100%;    
 }
 nav{
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
     padding-top: 45px;
     padding-left: 8%;
@@ -23,27 +23,30 @@ nav{
 }
 .logo{
     color: darkslateblue;
+    cursor: pointer;
+
     font-style: italic;
     font-size: 35px;
-    cursor: pointer;
+    
 }
 span{
     color: red;
     
 }
 nav ul li{
-    list-style-type: none;
     display: inline-block;
+    list-style-type: none;
+    
     padding: 10px 45px ;
     
 }
 nav ul li a{
-    color: burlywood;
-    text-decoration:dashed;
-    font-weight: bold;
-    text-transform: capitalize;
-    position: relative;
     border-radius: 30px solid red;
+    color: burlywood;
+    font-weight: bold;
+    position: relative;
+    text-decoration:dashed;
+    text-transform: capitalize;
     margin-right: 70px;
 }
 nav ul li a:hover{
@@ -55,37 +58,47 @@ nav ul li a:hover{
 
 }
 .btn{
-    color: red;
     background-color: aliceblue;
-    text-decoration: solid;
     border:2px solid transparent;
-    position: relative;
+    border-radius: 30px;
+    color: red;
+    font-weight: bold ;
+    
+   
     margin-top: 1vh;
     margin-left: 1300px;
-    right: 5px;
-
-    font-weight: bold ;
+    position: relative;
     padding: 10px 25px;
-    border-radius: 30px;
+    
+    
+    right: 5px;
+    text-decoration: solid;
+
+    
     transition:.4s;
 }
 .btn:hover{
-    transform: scale(1.2);
-    color: red;
     background-color: transparent;
     border: 2px solid white;
+    color: red;
+    transform: scale(1.2);
+    color: red;
+    
 }
 .content{
+    border: red;
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    border: red;
+    
+    
     transform: translate(-50%);
 }
 h1{
    color:white;
-   margin: 20px 0px 20px; 
    font-size: 75px;
+   margin: 20px 0px 20px; 
+   
 }
 h3{
     color:white;
@@ -94,8 +107,9 @@ h3{
 }
 h4{
     color: #fcfcfc;
-    letter-spacing: 2px;
     font-size: 20px;
+    letter-spacing: 2px;
+    
 }
 .newslatter{
     width: 380px;
@@ -104,46 +118,52 @@ h4{
 
 }
 .newslatter form input:first-child{
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
     border: 2px solid #f9004d;
-    outline: none;
     border-radius: 30px;
+    display: inline-block;
+    outline: none;
+    padding: 14px 130px 14px 15px;
+    width: 100%;
+    
+    
+    
+    
 }
 .newslatter form input:last-child{
+    
     position: absolute;
     height: 40px;
     width: 100px;
     border-radius: 30px;
     display: inline-block;
     outline: none;
-    border: none;
-    background-color: #f9004d;
-    color: white;
-    box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+    color:red;
+    box-shadow: 0px 0px 5px black,0px 0px 15px black;
     top: 6px;
     right:6px;
 }
 .newslatter form input:last-child:hover{
-    transform: scale(1.2);
+    
     background-color: transparent;
-    border: 1px solid white;
-    color:orange;
+    border: 1px solid red;
+    color:#f9004d;
     transition: 60px;
+    transform: scale(1.2);
 }
 button{
     background-color:red;
     color:white;
-    text-decoration: none ;
+    border-radius: 30px;
     font-weight:bold ;
     padding: 13px 30px;
-    border-radius: 30px;
     transition: .4s;
+    text-decoration: none ;
+
 }
 button:hover{
+    transform: scale(1.2);
     background-color: transparent;
-    border: 2px solid ;
+    border: 2px solid red ;
 }
 .About img{
     border:red solid;
@@ -159,31 +179,34 @@ button:hover{
     background-color:  #101010;
 }
 .About-text{
-    width: 550px;
     color:greenyellow;
     margin: 100px;
+    width: 550px;
 }
+
 .main{
-    width: 1130px;
+    align-items: center;
+    display:flex;
     max-width: 95%;
     margin:0 auto;
-    display:flex;
-    align-items: center;
+    width: 1130px;
     justify-content:space-around;
 
 }
 .About-text h2{
     color:red;
-    text-decoration: dotted;
     font-size: 75px;
-    text-transform: capitalize;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: dotted;
+    text-transform: capitalize;
+    
 }
 .About-text h5{
     color:white;
-    letter-spacing: 2px;
+    
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
     margin-bottom: 25px;
     text-transform: capitalize;
     text-decoration:underline pink;
@@ -194,36 +217,40 @@ button:hover{
     line-height: 28px;
 }
 .Service{
-    background-color:  #101010;;
-    width:100%;
+    background-color:  #101010;
     padding: 100px 0px ;
+    width:100%;
+    
 }
 .Title h2{
     color: #fcfcfc;
     font-size: 75px;
-    width: 1130px;
+    
     margin: 30px auto;
+    width: 1130px;
     text-align: center;
 }
 .Title h2 span{
     color: red;
 }
 .box{
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     min-height: 480px;
+    justify-content: center;
+    
+    
 }
 .card{
-    height: 365px;
-    width: 335px;
-    padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
+    height: 365px;
     margin:15px;
-    position:relative;
     overflow: hidden;
+    padding: 20px 35px;
+    position:relative;
     text-align: center;
+    width: 335px;
 }
 .card i{
     font-size: 50px;
@@ -236,15 +263,15 @@ button:hover{
     color:#fcfcfc;
     font-size: large;
     position: relative;
-
     text-decoration: solid;
 }
 .card h5{
+    align-content: center;
     color: #fcfcfc;
     position: relative;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    align-content: center;
+    
 }
 .pra .button{
     color: red;
@@ -256,16 +283,17 @@ button:hover{
     transition: .4s;
 }
 .Contactme{
-    font-size: 20px;
     background-color: #101010;
     color:#fcfcfc;
-    weight: 100%;
-    top:bottom;
+    font-size: 20px;
     left: 5px;
     text-align: center;
+    -ms-text-justify: auto;
+    top:bottom;
+    weight: 100%;
     justify-content: center;
     text-shadow : 100px;
-    -ms-text-justify: auto;
+    
 }
 .Contactme .AttracttheRecrutor p{    
     color:red;
@@ -275,21 +303,26 @@ button:hover{
     text-overflow: ellipsis;
 }
 .Contactme .me {
+    align-items: center;
     color:red;
+    display: inline-flex;
+    
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
-    text-indent: 100px;
-    display: inline-flex;
     justify-content: center;
-    align-items: center;
     min-height: 480px;
+    text-indent: 100px;
+    
+    
+    
+    
 
 }
 .Contactme h6{
     color: #fcfcfc;;
     font-style:italic;
-    text-decoration-line:underline ;
     font-display:initial;
+    text-decoration-line:underline ;
     text-indent: 100px
 }
 .Contactme h4{
@@ -308,9 +341,9 @@ button:hover{
 
 }
 .button-two:hover{
-    transform: matrix(1.2);
     color: red;
     background-color: transparent;
     border-radius: 2px solid white;
+    transform: matrix(1.2);
 }
 
